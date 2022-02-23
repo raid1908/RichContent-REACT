@@ -1,0 +1,36 @@
+html{
+  font-size: 10px;
+  @include media-breakpoint-down(lg){
+    font-size:calc(16px + 1.5vw);
+  }
+}
+p,h1,h2,span{
+  font-family: 'Lato', sans-serif;
+}
+p{
+  &.fs-small{
+    font-size: 1.6em;
+    line-height: 1.625em;
+  }
+  &.fs-normal{
+    font-size: 2em;
+  }
+}
+.gotham{
+  font-family: 'GothamBook';
+}
+.title{
+  font-size: 5em;
+  &.lh-56{
+    line-height: 1.12em;
+  }
+  &.lh-60{
+    line-height: 1.2em;
+  }
+}
+.sub__title{
+  font-size: 4em;
+  &.lh-56{
+    line-height: 1.4em;
+  }
+}

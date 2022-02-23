@@ -1,0 +1,17 @@
+header{
+  &.bg-blue{
+    background-color: #408DDC;
+  }
+  &.py-140{
+    padding: 140px 0;
+  }
+  &.z-100{
+    z-index: 100;
+  }
+  .text__section{
+    width: 585px;
+    p{
+      margin-top: 42px;
+    }
+  }
+}

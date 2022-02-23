@@ -1,0 +1,6 @@
+@font-face { font-family: 'GothamBook'; src: url('../fonts/GothamBook.eot');src: local('../fonts/GothamBook'), url('../fonts/GothamBook.woff') format('woff'), url('../fonts/GothamBook.ttf') format('truetype');  }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './imports/base.scss';
+@import './imports/logo.scss';
+@import './imports/header.scss';

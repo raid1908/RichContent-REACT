@@ -1,0 +1,8 @@
+.logo-container{
+  .logo{
+    z-index: 110;
+    &.z-50{
+      z-index: 50;
+    }
+  }
+}
