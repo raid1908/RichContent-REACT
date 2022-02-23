@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../media/lenovo-logo-01.svg";
+import logo from "../../media/lenovo-logo-01.svg";
 
 
 export default function Logo(props){

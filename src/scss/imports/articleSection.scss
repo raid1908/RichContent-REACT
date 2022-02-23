@@ -1,0 +1,24 @@
+.articles__section{
+  margin-top: 10em;
+  article{
+    h2{
+      margin-bottom: .4em;
+      &.mt-40{
+        margin-top: .8em;
+      }
+      &.mt-55{
+        margin-top: 1.1em;
+      }
+    }
+    &.flex-column{
+      img{
+        margin: 9em 0;
+      }
+    }
+    img{
+      &.px-102{
+        padding: 0 10.2em;
+      }
+    }
+  }
+}
