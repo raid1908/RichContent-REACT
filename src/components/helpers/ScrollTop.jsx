@@ -3,7 +3,7 @@ import chevronUp from "../../media/circle-chevron-up-solid.svg"
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
-    
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -25,11 +25,11 @@ export default function ScrollToTop() {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
 
-    return (
+    return <>
         <div className="position-fixed bottom-0 end-0">
             {isVisible && (
                 <img  onClick={scrollToTop} className="scroll__top" src={chevronUp} alt=""/>
             )}
         </div>
-    );
+    </>
 }
