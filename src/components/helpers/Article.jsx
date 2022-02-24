@@ -1,4 +1,6 @@
 import React from "react";
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 export default function Article(props){
@@ -6,7 +8,7 @@ export default function Article(props){
 
     function handleArticleType() {
         if(type === "row"){
-            return "d-flex align-items-center justify-content-between";
+            return "d-flex align-items-center justify-content-between flex-xl-row flex-column";
         }
         else if(type === "column"){
             return "d-flex flex-column align-items-center justify-content-between"
@@ -18,10 +20,10 @@ export default function Article(props){
 
     return <>
                 <article className={handleArticleType()}>
-                    <div className="text__section">
+                    <div className="text__section col-12">
                         {children}
                     </div>
-                    <img className={imageClassName} {...rest}  src={img} />
+                    {img ? <LazyLoadImage className={imageClassName} effect="blur" {...rest}  src={img}/> : ""}
                 </article>
     </>
 }

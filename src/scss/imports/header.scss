@@ -4,12 +4,15 @@ header{
   }
   &.py-140{
     padding: 140px 0;
-  }
-  &.z-100{
-    z-index: 100;
+    @include media-breakpoint-down(lg){
+      padding: 80px 0;
+    }
   }
   .text__section{
     width: 585px;
+    @include media-breakpoint-down(xl){
+      width: 100%;
+    }
     p{
       margin-top: 42px;
     }

@@ -1,8 +1,25 @@
 html{
   font-size: 10px;
-  @include media-breakpoint-down(lg){
-    font-size:calc(16px + 1.5vw);
+  @include media-breakpoint-down(xxl){
+    font-size: 9px;
   }
+  @include media-breakpoint-down(xl){
+    font-size: 8px;
+  }
+}
+main{
+  margin: 0 0 12.5em 0;
+  .container{
+    @include media-breakpoint-down(sm){
+      width: 90%;
+    }
+  }
+}
+.scroll__top{
+  bottom: 5%;
+  right: 3%;
+  cursor: pointer;
+  position: fixed;
 }
 p,h1,h2,span{
   font-family: 'Lato', sans-serif;
@@ -12,6 +29,9 @@ p{
   &.fs-small{
     font-size: 1.6em;
     line-height: 1.625em;
+    @include media-breakpoint-down(xl){
+      font-size: 16px;
+    }
   }
   &.fs-normal{
     font-size: 2em;

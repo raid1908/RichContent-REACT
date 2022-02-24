@@ -1,0 +1,40 @@
+.specification__table{
+  margin: 5.3em auto 0 auto;
+  img{
+    margin:  7em 0 1em 0;
+  }
+  .addtional__Info{
+    margin-bottom: 5em;
+  }
+}
+
+table{
+  margin: 3em 0 7em 0;
+  tbody{
+    tr{
+      border-bottom: solid #979797 1px;
+      &:last-of-type{
+        border-bottom: none;
+      }
+      td{
+        padding: .5em 0;
+        font-size: 2em;
+        font-weight: 300;
+        font-family: "Lato", sans-serif;
+        vertical-align: top;
+        line-height: 1.5em;
+        &:first-of-type{
+          padding: .5em 1em .5em 0;
+        }
+        p{
+          &.star{
+            font-size: .7em;
+            @include media-breakpoint-down(md){
+              font-size: .9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
